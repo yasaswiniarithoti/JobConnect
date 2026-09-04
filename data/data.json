@@ -1,0 +1,72 @@
+{
+  "users": [
+    {
+      "Name": "yashu arithoti",
+      "Email": "yashuarithoti@gmail.com",
+      "Phno": "9080706050",
+      "Password": "Arithoti@13",
+      "role": "applicant",
+      "id": "UtetTRszP24",
+      "Location": "hyderabad",
+      "About": "uhm",
+      "Skills": "yes",
+      "Education": "yes",
+      "Resume": ""
+    },
+    {
+      "Name": "Sai Raja",
+      "Email": "Sai@gmail.com",
+      "Phno": "9184842456",
+      "Password": "SaiRaja@09",
+      "role": "recruiter",
+      "id": "V7-fp70Yy5o"
+    }
+  ],
+  "messages": [],
+  "jobs": [
+    {
+      "title": "Data Analyst",
+      "company": "Deloitte",
+      "location": "Bangalore",
+      "type": "Full Time",
+      "salary": "₹5 - ₹8 LPA",
+      "experience": "1 - 2 years",
+      "description": "We are looking for Data Analyst to analyze business data and generate meaningful insights. The candidate will work with different teams to collect, clean, and analyze data, create dashboards, and prepare reports to support business decisions",
+      "skills": "Python, SQL, Excel",
+      "id": "RNvkuJlET88"
+    }
+  ],
+  "applications": [
+    {
+      "applicantId": "UtetTRszP24",
+      "name": "yashu arithoti",
+      "email": "yashuarithoti@gmail.com",
+      "jobTitle": "Frontend Developer",
+      "company": "Microsoft",
+      "location": "Hyderabad",
+      "status": "Selected",
+      "id": "QrVPGgz4x94"
+    }
+  ],
+  "jobAlerts": [
+    {
+      "userId": "UtetTRszP24",
+      "role": "Frontend Developer",
+      "skills": "Application Update",
+      "location": "Hyderabad",
+      "workType": "Selected",
+      "status": "Selected",
+      "id": "86yzudBIwos"
+    },
+    {
+      "userId": "UtetTRszP24",
+      "role": "UI/UX Designer",
+      "skills": "Application Update",
+      "location": "Mumbai",
+      "workType": "Rejected",
+      "status": "Rejected",
+      "id": "rmP-56DUnIE"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

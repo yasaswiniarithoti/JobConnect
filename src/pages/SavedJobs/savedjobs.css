@@ -1,0 +1,126 @@
+.saved-jobs-page {
+  width: 100%;
+  min-height: 100vh;
+  background: #ffffff;
+  color: #1f2937;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* HEADER */
+
+.saved-jobs-header {
+  background: #f8f7ff;
+  padding: 60px 8%;
+  text-align: center;
+}
+
+.saved-jobs-header-content {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.saved-jobs-header-content p {
+  color: #5b3df5;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin: 0 0 12px;
+}
+
+.saved-jobs-header-content h1 {
+  font-size: 42px;
+  color: #111827;
+  margin: 0 0 15px;
+}
+
+.saved-jobs-header-content span {
+  color: #6b7280;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* CONTENT */
+
+.saved-jobs-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 55px 8% 80px;
+}
+
+.saved-jobs-title {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.saved-jobs-title p {
+  color: #5b3df5;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin: 0 0 8px;
+}
+
+.saved-jobs-title h2 {
+  color: #111827;
+  font-size: 30px;
+  margin: 0;
+}
+
+.saved-count {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+/* JOB LIST */
+
+.saved-jobs-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+  .saved-jobs-header {
+    padding: 50px 6%;
+  }
+
+  .saved-jobs-header-content h1 {
+    font-size: 36px;
+  }
+
+  .saved-jobs-content {
+    padding: 45px 6% 70px;
+  }
+}
+
+@media (max-width: 600px) {
+  .saved-jobs-header {
+    padding: 40px 5%;
+  }
+
+  .saved-jobs-header-content h1 {
+    font-size: 30px;
+  }
+
+  .saved-jobs-header-content span {
+    font-size: 14px;
+  }
+
+  .saved-jobs-content {
+    padding: 35px 5% 60px;
+  }
+
+  .saved-jobs-title {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .saved-jobs-title h2 {
+    font-size: 25px;
+  }
+}

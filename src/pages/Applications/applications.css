@@ -1,0 +1,278 @@
+.applications-page {
+  min-height: 100vh;
+  background: #f8f9fc;
+  padding: 50px 7%;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* HEADER */
+
+.applications-header {
+  margin-bottom: 45px;
+}
+
+.applications-header p {
+  margin: 0 0 10px;
+  color: #4f46e5;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.applications-header h1 {
+  margin: 0 0 12px;
+  color: #111827;
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.applications-header span {
+  color: #64748b;
+  font-size: 17px;
+}
+
+/* CONTENT */
+
+.applications-content {
+  width: 100%;
+}
+
+.applications-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* APPLICATION CARD */
+
+.application-card {
+  width: 100%;
+  min-height: 125px;
+  padding: 24px 28px;
+  background: #ffffff;
+  border: 1px solid #e1e4ec;
+  border-radius: 16px;
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+  gap: 25px;
+
+  box-shadow: 0 5px 18px rgba(20, 30, 60, 0.05);
+  transition: 0.3s ease;
+}
+
+.application-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(79, 70, 229, 0.08);
+}
+
+/* MAIN JOB INFO */
+
+.application-main {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex: 1;
+  min-width: 0;
+}
+
+.application-icon {
+  width: 58px;
+  height: 58px;
+  min-width: 58px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #efedff;
+  border-radius: 14px;
+
+  font-size: 24px;
+}
+
+.application-main h2 {
+  margin: 0 0 6px;
+  color: #111827;
+  font-size: 19px;
+}
+
+.application-main p {
+  margin: 0 0 7px;
+  color: #64748b;
+  font-size: 14px;
+}
+
+.application-main span {
+  color: #64748b;
+  font-size: 13px;
+}
+
+/* STATUS */
+
+.application-status-section {
+  min-width: 150px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 7px;
+}
+
+.application-status-section > span {
+  color: #94a3b8;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.application-status {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 7px 14px;
+  border-radius: 20px;
+
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* STATUS COLORS */
+
+.application-status.pending {
+  background: #fff7ed;
+  color: #ea580c;
+}
+
+.application-status.under-review {
+  background: #eff6ff;
+  color: #2563eb;
+}
+
+.application-status.selected {
+  background: #ecfdf5;
+  color: #059669;
+}
+
+.application-status.rejected {
+  background: #fef2f2;
+  color: #dc2626;
+}
+
+/* DELETE */
+
+.delete-application-btn {
+  flex-shrink: 0;
+
+  border: 1px solid #fecaca;
+  background: #fef2f2;
+  color: #dc2626;
+
+  padding: 10px 16px;
+  border-radius: 8px;
+
+  font-size: 13px;
+  font-weight: 600;
+  font-family: inherit;
+
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.delete-application-btn:hover {
+  background: #dc2626;
+  color: #ffffff;
+  border-color: #dc2626;
+}
+
+/* EMPTY STATE */
+
+.applications-empty {
+  background: #ffffff;
+  border: 1px solid #e1e4ec;
+  border-radius: 16px;
+
+  padding: 70px 30px;
+  text-align: center;
+
+  box-shadow: 0 5px 18px rgba(20, 30, 60, 0.05);
+}
+
+.empty-icon {
+  width: 70px;
+  height: 70px;
+
+  margin: 0 auto 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #efedff;
+  border-radius: 18px;
+
+  font-size: 30px;
+}
+
+.applications-empty h2 {
+  margin: 0 0 10px;
+  color: #111827;
+  font-size: 24px;
+}
+
+.applications-empty p {
+  margin: 0;
+  color: #64748b;
+  font-size: 15px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 850px) {
+  .application-card {
+    flex-wrap: wrap;
+  }
+
+  .application-main {
+    width: 100%;
+    flex: none;
+  }
+
+  .application-status-section {
+    min-width: auto;
+  }
+
+  .delete-application-btn {
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .applications-page {
+    padding: 40px 5%;
+  }
+
+  .applications-header h1 {
+    font-size: 34px;
+  }
+
+  .application-card {
+    padding: 22px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .application-main {
+    width: 100%;
+  }
+
+  .application-status-section {
+    width: 100%;
+  }
+
+  .delete-application-btn {
+    width: 100%;
+  }
+}

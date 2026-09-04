@@ -1,0 +1,116 @@
+.filter-sidebar {
+  width: 250px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 25px;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.filter-sidebar h2 {
+  margin: 0 0 25px;
+  font-size: 22px;
+  color: #111827;
+}
+
+.filter-section {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.filter-section h3 {
+  font-size: 15px;
+  color: #111827;
+  margin: 0 0 15px;
+}
+
+.filter-section label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+
+.filter-section input {
+  width: 16px;
+  height: 16px;
+  accent-color: #4f46e5;
+  cursor: pointer;
+}
+
+.clear-filter {
+  width: 100%;
+  padding: 11px;
+  border: 1px solid #4f46e5;
+  background: white;
+  color: #4f46e5;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.clear-filter:hover {
+  background: #4f46e5;
+  color: white;
+}
+
+/* =========================
+   MOBILE FILTER DROPDOWN
+========================= */
+
+.filter-toggle {
+  display: none;
+}
+
+/* =========================
+   SMALL DEVICES
+========================= */
+
+@media (max-width: 900px) {
+
+  .filter-sidebar {
+    width: 100%;
+    padding: 0;
+    border: none;
+    background: transparent;
+  }
+
+  .filter-toggle {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 18px;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    color: #111827;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  .filter-content {
+    display: none;
+    margin-top: 12px;
+    padding: 20px;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+  }
+
+  .filter-content.show {
+    display: block;
+  }
+
+  .filter-content h2 {
+    display: none;
+  }
+
+}

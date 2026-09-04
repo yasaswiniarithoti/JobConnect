@@ -1,0 +1,40 @@
+.category-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 25px 20px;
+  text-align: center;
+  transition: 0.3s ease;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.category-icon {
+  width: 55px;
+  height: 55px;
+  margin: 0 auto 18px;
+  border-radius: 50%;
+  background: #eef2ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #4f46e5;
+  font-size: 24px;
+}
+
+.category-card h3 {
+  font-size: 17px;
+  margin: 10px 0;
+  color: #111827;
+}
+
+.category-card p {
+  font-size: 14px;
+  color: #6b7280;
+  margin: 0;
+}

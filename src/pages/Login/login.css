@@ -1,0 +1,307 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.login-page {
+  min-height: 100vh;
+  background-color: #f8f7fc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  font-family: Arial, sans-serif;
+}
+
+/* Main Box */
+
+.login-box {
+  width: 900px;
+  min-height: 600px;
+  background-color: white;
+  border: 1px solid #ddd9e8;
+  border-radius: 12px;
+  display: flex;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* Logo */
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #4824c9;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 55px;
+}
+
+.logo-icon {
+  width: 30px;
+  height: 30px;
+  background-color: #5729d8;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Heading */
+
+.login-box h1 {
+  font-size: 25px;
+  color: #222;
+  margin-bottom: 8px;
+}
+
+.login-box > p {
+  color: #777;
+  font-size: 13px;
+  margin-bottom: 30px;
+}
+
+/* Form */
+
+form {
+  width: 100%;
+}
+
+form label {
+  display: block;
+  font-size: 12px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 7px;
+}
+
+/* Input */
+
+.input-box {
+  width: 100%;
+  height: 42px;
+  border: 1px solid #ddd9e5;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+  margin-bottom: 20px;
+  color: #888;
+}
+
+.input-box svg {
+  font-size: 17px;
+  margin-right: 8px;
+}
+
+.input-box input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  font-size: 13px;
+}
+
+.input-box input::placeholder {
+  color: #aaa;
+}
+
+/* Login Options */
+
+.login-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 22px;
+}
+
+.login-options label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.login-options input {
+  accent-color: #5828d8;
+}
+
+.login-options a {
+  color: #5828d8;
+  text-decoration: none;
+  font-size: 11px;
+}
+
+/* Login Button */
+
+.login-btn {
+  width: 100%;
+  height: 42px;
+  border: none;
+  border-radius: 5px;
+  background-color: #5728d8;
+  color: white;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.login-btn:hover {
+  background-color: #4720b8;
+}
+
+/* Divider */
+
+.divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin: 22px 0 15px;
+  color: #888;
+  font-size: 11px;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  height: 1px;
+  background-color: #e4e1e9;
+  flex: 1;
+}
+
+/* Social Buttons */
+
+.social-btn {
+  width: 100%;
+  height: 38px;
+  background-color: white;
+  border: 1px solid #ddd9e5;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 9px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.social-btn svg {
+  font-size: 14px;
+}
+
+.social-btn:hover {
+  background-color: #f8f7fc;
+}
+
+/* Sign Up */
+
+.signup-text {
+  text-align: center;
+  color: #777;
+  font-size: 11px;
+  margin-top: 22px;
+}
+
+.signup-text a {
+  color: #5828d8;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* LEFT */
+
+.login-left {
+  width: 55%;
+  padding: 35px 45px;
+}
+
+/* RIGHT */
+
+.login-right {
+  width: 45%;
+  background-color: #f0ecff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-right img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Responsive */
+
+@media (max-width: 850px) {
+
+  .login-page {
+    padding: 25px 15px;
+  }
+
+  .login-box {
+    grid-template-columns: 1fr;
+    max-width: 520px;
+  }
+
+  .login-right {
+    display: none;
+  }
+
+  .login-left {
+    width: 100%;
+    padding: 45px 50px;
+  }
+
+}
+
+
+@media (max-width: 500px) {
+
+  .login-page {
+    padding: 20px 12px;
+  }
+
+  .login-box {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .login-left {
+    width: 100%;
+    padding: 35px 25px;
+
+    box-sizing: border-box;
+  }
+
+  .login-left .logo {
+    margin-bottom: 35px;
+  }
+
+  .login-left h1 {
+    font-size: 27px;
+  }
+
+  .login-left > p {
+    font-size: 14px;
+  }
+
+  .input-box {
+    width: 100%;
+  }
+
+  .login-btn {
+    width: 100%;
+  }
+
+  .social-btn {
+    width: 100%;
+  }
+
+}

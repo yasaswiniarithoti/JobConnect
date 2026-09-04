@@ -1,0 +1,281 @@
+/* NAVBAR */
+
+.navbar {
+  width: 100%;
+  height: 72px;
+  padding: 0 7%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  border-bottom: 1px solid #eeeeee;
+  position: relative;
+  z-index: 1000;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* LOGO */
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: #111827;
+  flex-shrink: 0;
+}
+
+.navbar-logo .logo-icon {
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #5b3df5;
+  color: #ffffff;
+  border-radius: 9px;
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.navbar-logo span {
+  font-size: 20px;
+  font-weight: 700;
+  color: #111827;
+}
+
+/* NAVIGATION LINKS */
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #4b5563;
+  font-size: 15px;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #4f46e5;
+}
+
+.nav-links a.active {
+  color: #4f46e5;
+  font-weight: 600;
+}
+
+/* RIGHT SIDE */
+
+.nav-buttons {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* LOGIN */
+
+.nav-login {
+  text-decoration: none;
+  color: #4f46e5;
+  background: #ffffff;
+  border: 1px solid #d8d2ff;
+  padding: 9px 18px;
+  border-radius: 7px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.nav-login:hover {
+  background: #f3f1ff;
+}
+
+/* REGISTER */
+
+.nav-register {
+  text-decoration: none;
+  color: #ffffff;
+  background: #4f46e5;
+  padding: 10px 19px;
+  border-radius: 7px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.nav-register:hover {
+  background: #4338ca;
+}
+
+/* ================================= */
+/* PROFILE MENU */
+/* ================================= */
+
+.profile-menu {
+  position: relative;
+}
+
+/* PROFILE BUTTON */
+
+.profile-menu-button {
+  border: none;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 5px;
+  color: #111827;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.profile-menu-button:hover {
+  color: #4f46e5;
+}
+
+/* PROFILE ICON */
+
+.profile-menu-button svg:first-child {
+  color: #4f46e5;
+  font-size: 27px;
+}
+
+/* DOWN ARROW */
+
+.profile-menu-button svg:last-child {
+  color: #6b7280;
+  font-size: 11px;
+}
+
+/* ================================= */
+/* PROFILE DROPDOWN */
+/* ================================= */
+
+.profile-dropdown {
+  position: absolute;
+  top: 48px;
+  right: 0;
+  width: 200px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+  padding: 8px 0;
+  z-index: 2000;
+}
+
+/* DROPDOWN LINKS */
+
+.profile-dropdown a,
+.profile-dropdown button {
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+  padding: 12px 17px;
+  border: none;
+  background: #ffffff;
+  text-decoration: none;
+  text-align: left;
+  color: #374151;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.profile-dropdown a:hover,
+.profile-dropdown button:hover {
+  background: #f3f1ff;
+  color: #4f46e5;
+}
+
+/* LOGOUT */
+
+.profile-dropdown button {
+  border-top: 1px solid #eeeeee;
+  margin-top: 5px;
+}
+
+/* ================================= */
+/* RESPONSIVE */
+/* ================================= */
+
+@media (max-width: 900px) {
+
+  .navbar {
+    padding: 0 5%;
+  }
+
+  .nav-links {
+    gap: 20px;
+  }
+
+  .nav-links a {
+    font-size: 14px;
+  }
+
+}
+
+@media (max-width: 700px) {
+
+  .navbar {
+    height: auto;
+    min-height: 72px;
+    padding: 15px 5%;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .nav-links {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+    padding-top: 5px;
+  }
+
+  .nav-buttons {
+    margin-left: auto;
+  }
+
+}
+
+@media (max-width: 500px) {
+
+  .navbar-logo span {
+    font-size: 18px;
+  }
+
+  .navbar-logo .logo-icon {
+    width: 34px;
+    height: 34px;
+    font-size: 18px;
+  }
+
+  .nav-links {
+    gap: 14px;
+  }
+
+  .nav-links a {
+    font-size: 13px;
+  }
+
+  .nav-login,
+  .nav-register {
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+
+  .profile-menu-button span {
+    display: none;
+  }
+
+}

@@ -1,0 +1,59 @@
+.company-card-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.company-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  min-height: 150px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.company-card:hover {
+  transform: translateY(-5px);
+  border-color: #d8d2ff;
+  box-shadow: 0 10px 25px rgba(91, 61, 245, 0.1);
+}
+
+.company-card img {
+  max-width: 170px;
+  max-height: 60px;
+  object-fit: contain;
+}
+
+.company-card h3 {
+  margin: 15px 0 0;
+  font-size: 17px;
+  font-weight: 600;
+  color: #111827;
+  text-align: center;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 600px) {
+  .company-card {
+    min-height: 140px;
+    padding: 25px;
+  }
+
+  .company-card img {
+    max-width: 150px;
+    max-height: 55px;
+  }
+
+  .company-card h3 {
+    font-size: 16px;
+  }
+}
